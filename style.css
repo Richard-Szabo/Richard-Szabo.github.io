@@ -109,6 +109,11 @@ body {
 }
 .left-section>.logo{
     flex: 1 1 20%;
+    padding: 20%;
+}
+
+.left-section .logo div img{
+    object-fit: contain;
 }
 .logo > img{
     object-fit: cover;
@@ -119,6 +124,8 @@ body {
 }
 .left-section>.text{
     flex: 2 1 60%;
+    justify-content: center;
+    justify-content: center;
 }
 .left-section>.social{
     flex: 1 1 20%;
@@ -150,6 +157,9 @@ margin: 1rem 0.5rem;
         filter 1.5s ease-in-out,
         flex 1s ease-in;
     perspective: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -162,6 +172,25 @@ margin: 1rem 0.5rem;
         rotate 0.6s ease-in-out,
         filter 1.2s ease-in-out;
     animation: moveSlideIn 0.6s ease-out 0.4s forwards;
+}
+
+.slide-container > .title{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    z-index: 100;
+    transform: translate(-50%, 50%); 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    color: #f1f1f1;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 8px #3D5A80;
+}
+.slide-container > .title >.rotate{
+    transform: rotate(-90deg);
+    background-color: rgba(41, 50, 65, 0.1);
 }
 
 .slide-container:hover{
@@ -217,18 +246,17 @@ margin: 1rem 0.5rem;
     opacity: 0;
 }
 .site-text {
-    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family:'Alumni Sans Pinstripe', sans-serif;
-    font-size: 7rem;
+    font-size: 4.5rem;
+    padding: 4px;
     font-weight: 100;
     letter-spacing: 1rem;
-    height: 0px;
     overflow: hidden;
-    text-align: left;
-    left: 40%;
-    bottom: 25%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    animation: textFadeIn 0.4s ease-out 0.5s forwards;
+    text-align: center;
     text-shadow: 0px 2px 10px gray;
 }
 

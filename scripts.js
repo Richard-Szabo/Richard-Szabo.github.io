@@ -14,10 +14,10 @@ document.querySelector('#gallery').addEventListener('click', () => {
 })
 
 document.querySelectorAll('.slide-container').forEach((element) => {
-    element.addEventListener('mouseover', () => {
-        document.querySelector('.center-box').classList.add('hidden');
-    })
-    element.addEventListener('mouseout', () => {
-        document.querySelector('.center-box').classList.remove('hidden');
-    })
+    // element.addEventListener('mouseover', () => {
+    //     document.querySelector('.center-box').classList.add('hidden');
+    // })
+    // element.addEventListener('mouseout', () => {
+    //     document.querySelector('.center-box').classList.remove('hidden');
+    // })
 })
